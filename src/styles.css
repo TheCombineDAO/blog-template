@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  @apply font-sans text-wall-600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p strong {
+  @apply font-semibold;
+}
+
+p a {
+  @apply text-green-400 font-semibold;
+}
+
+h1,
+.type-h1 {
+  @apply text-4xl lg:text-5xl font-extrabold leading-tight text-wall-600;
+}
+
+h2,
+.type-h2 {
+  @apply text-3xl lg:text-4xl font-bold leading-tight;
+}
+
+h3,
+.type-h3 {
+  @apply text-xl font-semibold;
+}
+
+h4,
+.type-ui {
+  @apply text-lg font-semibold;
+}
+
+h5,
+.type-h5,
+.type-bold {
+  @apply text-base font-semibold leading-relaxed;
+}
+
+p,
+.type-p {
+  @apply text-base leading-relaxed;
+}
+
+.type-sub {
+  @apply text-sm;
+}
+
+.type-sub-bold {
+  @apply text-sm font-semibold;
+}
+
+code .type-code {
+  @apply bg-wall-100 p-4 font-mono;
+}
+
+p.indent {
+  text-indent: 4ch;
+}
+
+article main p {
+  @apply mb-3 text-lg;
+  text-indent: 4ch;
+  /* max-width: 34em; */
+}
+
+.layout {
+  @apply w-full md:w-10/12 lg:w-8/12;
+}
+
+.layout-narrow {
+  @apply w-full md:w-8/12 lg:w-6/12;
+}
+
+.index-sidebar {
+  @apply hidden lg:flex lg:flex-col lg:w-1/4 lg:mt-20 lg:bg-wall-100 lg:p-5 lg:rounded-lg lg:ml-10 text-sm;
+  height: fit-content;
+}
+
+.index-sidebar ul {
+  max-width: 34em;
+}
